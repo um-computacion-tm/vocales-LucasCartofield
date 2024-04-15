@@ -2,9 +2,9 @@ import unittest
 
 
 def contar_vocales(palabra):
-    vocales = ("a", "e", "i", "o", "u")
+    vocales = ("a", "e", "i", "o", "u", "á", "é", "í", "ó", "ú")
     resultado = {}
-    for letra in palabra:
+    for letra in palabra.lower(): # Convierte las letras en palabra a minúscula
         if letra in vocales:
             # La letra es vocal
             if letra in resultado.keys():
