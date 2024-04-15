@@ -38,5 +38,11 @@ class TestContarVocales(unittest.TestCase):
             resultado,
             {"a": 1, "e": 3, "i": 1, "o": 2, "u": 1},
         )
-        
+    def test_con_acento(self):
+        palabra = "últimA sílAba"
+        resultado = contar_vocales(palabra)
+        self.assertEqual(
+            resultado,
+            {"a": 3, "i": 1, "í": 1, "ú": 1},
+        )         
 unittest.main()        
